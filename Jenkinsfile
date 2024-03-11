@@ -1,13 +1,11 @@
 pipeline {
-    agent any
+    agent agent1_V1
 
     stages {
         stage('Build') {
             steps {
                 echo "Building ..."
                 sh '''
-                sudo apt update
-                sudo apt install python3
                 pip3 install -r requirements.txt
                 '''
             }
