@@ -6,7 +6,9 @@ pipeline {
             steps {
                 echo "Building ..."
                 sh '''
-                pip install -r requirements.txt
+                sudo apt update
+                sudo apt install python3
+                pip3 install -r requirements.txt
                 '''
             }
         }
