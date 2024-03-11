@@ -3,7 +3,7 @@ import requests
 
 def main():
     response = requests.get("https://jsonplaceholder.typicode.com/todos/1")
-    print(response)
+    print(response.text)
 
 
 if __name__ == "__main__":
